@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser"
 import { FormEvent } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { public_key, service_id, template_id } from "./components/email_js";
-
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 function App() {
   const [loading, set_loading] = useState<boolean>(false)
@@ -216,6 +216,7 @@ function App() {
           <span>All Rights Reserved © Raine Uplift {new Date().getFullYear()}</span>
       </div>
       <ToastContainer />
+      <FloatingWhatsApp phoneNumber="+263772537086" accountName="Raine Uplift" avatar="https://ngratesc.sirv.com/Raine/favicon.png" statusMessage="Typically replies within 10 minutes"/>
     </div>
   )
 }
