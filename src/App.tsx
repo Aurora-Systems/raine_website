@@ -4,6 +4,8 @@ import { FormEvent } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { public_key, service_id, template_id } from "./components/email_js";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+import { phone } from "./components/phone"
+import { Fade } from "react-awesome-reveal";
 
 function App() {
   const [loading, set_loading] = useState<boolean>(false)
@@ -56,7 +58,7 @@ function App() {
         </div>
       </div>
       <div className="container">
-
+      <Fade cascade={true}>
         <div className="row  align-items-center justify-content-center mt-5">
           <div className="col-sm">
             <img src="https://ngratesc.sirv.com/Raine/12934.jpg" className="img-fluid rounded" alt="Person being messaged" />
@@ -67,6 +69,7 @@ function App() {
             <p>At Raine Uplift, we inspire and empower our clients to achieve self-actualization. From personalized wellness plans to luxurious spa treatments, every experience is designed to rejuvenate, repair, and replenish. Our dedicated team of passionate wellness consultants is here to guide you on your journey to healthier living.</p>
           </div>
         </div>
+        </Fade>
         <div className={"mt-5 "}>
           <div className={"text-center"}>
             <div>
@@ -75,50 +78,73 @@ function App() {
             </div>
             <div className="row gap-3 mt-3 mb-3">
               <div className="col-sm shadow rounded p-2 mb-2 gradient-bg-card">
+                <Fade direction="down" cascade={true}>	
                 <img src="https://ngratesc.sirv.com/Raine/12885.jpg" className="img-thumbnail rounded" />
                 <p className="fw-bold gradient-text">Skin, Body & Beauty Treatments</p>
                 <small> Indulge in tailored therapies that leave you glowing and refreshed.</small>
+                </Fade>
               </div>
               <div className="col-sm shadow rounded p-2 mb-2">
+              <Fade direction="down" cascade={true}>	
+
                 <img src="https://ngratesc.sirv.com/Raine/full-shot-woman-training-mat.jpg" className="img-thumbnail rounded" />
 
                 <p className="fw-bold gradient-text">Fitness Training</p>
                 <small>Build strength and endurance with programs designed to suit your lifestyle.</small>
+              </Fade>
               </div>
               <div className="col-sm shadow rounded p-2 mb-2">
+              <Fade direction="down" cascade={true}>	
+
                 <img src="https://ngratesc.sirv.com/Raine/16953.jpg" className="img-thumbnail rounded" />
                 <p className="fw-bold gradient-text">Diet & Nutritional Counseling</p>
                 <small>Achieve your health goals with expert dietary advice.</small>
+              </Fade>
               </div>
             </div>
             <div className="row gap-3 mt-3 mb-3">
               <div className="col-sm shadow rounded p-2 mb-2">
+              <Fade direction="down" cascade={true}>	
+
                 <img src="https://ngratesc.sirv.com/Raine/2150356700.jpg" className="img-thumbnail rounded" />
                 <p className="fw-bold gradient-text">Physical Therapy</p>
                 <small>Restore balance and vitality through targeted therapeutic care.</small>
+                </Fade>
               </div>
               <div className="col-sm shadow rounded p-2 mb-2">
+              <Fade direction="down" cascade={true}>	
+
                 <img src="https://ngratesc.sirv.com/Raine/10010%20(1).jpg" className="img-thumbnail rounded" />
                 <p className="fw-bold gradient-text">Weight Loss Programs</p>
                 <small>Embark on a sustainable path to your ideal self.</small>
+                </Fade>
               </div>
               <div className="col-sm shadow rounded p-2 mb-2">
+              <Fade direction="down" cascade={true}>	
+
                 <img src="https://ngratesc.sirv.com/Raine/2149622606.jpg" className="img-thumbnail rounded" />
                 <p className="fw-bold gradient-text">Children's Wellness Programs</p>
                 <small>Set the foundation for lifelong health and happiness.</small>
+                </Fade>
               </div>
             </div>
+            <a href={`https://wa.me/${phone}?text=Can i get more information about the services you offer`}><button className="btn p_btn mt-1 mb-1">Learn More</button></a>
+
           </div>
         </div>
         
         <div className=" mt-5 mb-5">
+          <Fade cascade={true}>
           <div className="text-center">
             <h1 className="display-1 gradient-text">Corporate Wellness</h1>
             <p className="gradient-text">Partnership • Performance • Productivity</p>
             <p>Raine Uplift provides innovative wellness solutions to improve employee health and productivity. We focus on workplace wellness and risk management, reducing absenteeism and promoting preventative care. Our holistic approach supports organizations and employees, helping individuals thrive and perform at their best. After all, happy employees are a business's greatest asset.</p>
+              <a href="mailto:info@raineuplift.co.zw?subject=Info on Corporate Wellness"><button className="btn p_btn mt-2 mb-3">Learn More</button></a>
             <img src="https://ngratesc.sirv.com/Raine/2150468529.jpg" className="img-fluid rounded" />
           </div>
+          </Fade>
         </div>
+        <Fade>
         <div className=" mt-5 mb5 row align-items-center">
           <div className="col-sm text-md-start text-center">
             <h1 className="display-1 gradient-text">The Wellness Academy</h1>
@@ -133,11 +159,15 @@ function App() {
               attention being given to the marginalized
               communities with main goal being to empower
               the girl child.</p>
+              <a href={`https://wa.me/${phone}?text=Can i get more information about the Wellness Academy`}><button className="btn p_btn mt-1 mb-1">Learn More</button></a>
+
           </div>
           <div className="col-sm">
             <img src="https://ngratesc.sirv.com/Raine/2148387781.jpg" className="img-fluid rounded" alt="wellness academy" />
           </div>
         </div>
+        </Fade>
+        <Fade>
         <div className=" mt-5 mb5 row align-items-center">
           <div className="col-sm text-md-start text-center">
             <h1 className="display-1 gradient-text">Wellness Warehouse</h1>
@@ -145,15 +175,21 @@ function App() {
               us to formulate The wellness warehouse which is
               a convenient hub for all wellness products to
               increase accessibility for our clients.</p>
+              <a href={`https://wa.me/${phone}?text=Can i get more information about the Wellness Warehouse`}><button className="btn p_btn mt-1 mb-1">Learn More</button></a>
           </div>
           <div className="col-sm order-md-first">
             <img src="https://ngratesc.sirv.com/Raine/2147817694.jpg" className="img-fluid rounded" alt="wellness academy" />
           </div>
         </div>
+        </Fade>
+        <Fade>
         <div className="mt-5 mb-5 text-center">
             <h1 className="gradient-text display-1">Strategic Partnerships</h1>
             <p>At Raine Uplift, we pride ourselves on collaborating with top professionals in the industry to design and implement wellness routines that enhance both the quality and longevity of life. Our trusted network of partners brings unmatched expertise and dedication to holistic health. This esteemed group includes naturopathic doctors, dentists, psychotherapists, nutritionists, personal trainers, and medical doctors. Together, we ensure that every wellness plan is tailored to meet individual needs, empowering our clients to live healthier, more fulfilling lives.</p>
+            <a href={`mailto:info@raineuplift.co.zw?subject=Partner with Raine Uplift`}><button className="btn p_btn">Partner With Us</button></a>
+
         </div>
+        </Fade>
 
         <div className="mt-5 mb-5 row">
            
