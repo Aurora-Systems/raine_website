@@ -29,6 +29,12 @@ body{
     color:white !important;
 }
 
+.gradient-bg{
+    background: linear-gradient(45deg, var(--pc), var(--sc));
+}
+
+
+
 
 .gradient-text {
     background: linear-gradient(45deg, var(--pc), var(--sc));
@@ -57,4 +63,13 @@ video{
     height: 100%;
     top:0;
     color: white;
+}
+
+.img-thumbnail{
+    border: none!important;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
