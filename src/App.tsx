@@ -158,7 +158,7 @@ function App() {
         <div className="mt-5 mb-5 row">
            
             <div className="col-sm">
-                <h1 className="display-1 gradient-text">Contact Us</h1>
+                <h1 className="display-1 gradient-text text-md-start text-center">Contact Us</h1>
                 <form onSubmit={sendEmail} ref={form}>
                   <div className="mb-2" >
                     <span>Full Name</span>
@@ -176,7 +176,7 @@ function App() {
                     <span>Messgae</span>
                     <textarea  className="form-control" name="message" placeholder="Your message" />
                   </div>
-                  <div>
+                  <div className="text-md-start text-center mb-3">
                     <button type="submit" disabled={loading} className="btn p_btn">Send</button>
                   </div>
                 </form>
