@@ -175,7 +175,7 @@ function App() {
               us to formulate The wellness warehouse which is
               a convenient hub for all wellness products to
               increase accessibility for our clients.</p>
-              <a href={`https://wa.me/${phone}?text=Can i get more information about the Wellness Warehouse`}><button className="btn p_btn mt-1 mb-1">Learn More</button></a>
+              <a href={`https://wa.me/${phone}?text=Can i get more information about the Wellness Warehouse`}><button className="btn p_btn mt- mb-3">Learn More</button></a>
           </div>
           <div className="col-sm order-md-first">
             <img src="https://ngratesc.sirv.com/Raine/2147817694.jpg" className="img-fluid rounded" alt="wellness academy" />
@@ -186,7 +186,7 @@ function App() {
         <div className="mt-5 mb-5 text-center">
             <h1 className="gradient-text display-1">Strategic Partnerships</h1>
             <p>At Raine Uplift, we pride ourselves on collaborating with top professionals in the industry to design and implement wellness routines that enhance both the quality and longevity of life. Our trusted network of partners brings unmatched expertise and dedication to holistic health. This esteemed group includes naturopathic doctors, dentists, psychotherapists, nutritionists, personal trainers, and medical doctors. Together, we ensure that every wellness plan is tailored to meet individual needs, empowering our clients to live healthier, more fulfilling lives.</p>
-            <a href={`mailto:info@raineuplift.co.zw?subject=Partner with Raine Uplift`}><button className="btn p_btn">Partner With Us</button></a>
+            <a href={`mailto:info@raineuplift.co.zw?subject=Partner with Raine Uplift`}><button className="btn p_btn mb-3">Partner With Us</button></a>
 
         </div>
         </Fade>
