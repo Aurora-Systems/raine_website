@@ -187,8 +187,8 @@ function App() {
         </div>
 
       </div>
-      <div className="container d-flex flex-row justify-content-between mt-5">
-          <div className=" text-md-start text-center">
+      <div className="container d-flex flex-row flex-wrap justify-content-evenly gap-5 mt-5">
+          <div className=" text-md-start text-center mb-3">
             <p className="gradient-text">Get In Touch</p>
             <div className="d-flex flex-column">
               <span><i className="bi bi-geo-alt me-1"></i>56 Lomagundi, Avondale, Harare</span>
@@ -196,18 +196,20 @@ function App() {
               <span><i className="bi bi-envelope me-1"></i><a href="mailto:info@raineuplift.co.zw">info@raineuplift.co.zw</a></span>
             </div>
           </div>
-          <div className=" ">
+          <div className="text-md-start text-center mb-3 justify-content-evenly">
+            <div className="d-flex flex-column justify-content-center">
             <p className="gradient-text">Socials</p>
             <div className="d-flex flex-column">
               <span><i className="bi bi-facebook me-1"></i><a href="https://www.facebook.com/raineuplift" target="_blank">Facebook</a></span>
               <span><i className="bi bi-instagram me-1"></i><a href="https://www.instagram.com/raineuplift/" target="_blank">Instagram</a></span>
               <span><i className="bi bi-substack me-1"></i><a href="https://raineuplift.substack.com/" target="_blank">Substack</a></span>
               </div>
+              </div>
           </div>
           
-          <div className=" text-center">
+          <div className="w-sm-100 text-center">
             <p className="gradient-text">Subscribe To Our Blog</p>
-          <iframe src="https://raineuplift.substack.com/embed"   className="w-100"></iframe>
+          <iframe src="https://raineuplift.substack.com/embed"   className="w-sm-100"></iframe>
           </div>
       </div>
       <div className="gradient-bg text-center text-white">
