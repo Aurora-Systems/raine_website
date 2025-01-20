@@ -51,7 +51,7 @@ function App() {
           <div>
             <img src="https://ngratesc.sirv.com/Raine/logo_header.png" width={200} className="img-fluid" />
             <h1 className="display-1 text-center">Rediscover Your<br /> <span className="gradient-text"> Best Self</span><br /></h1>
-            <button className="text-center p_btn btn shadow">Book Now</button>
+            <a href="https://raineuplift1.zohobookings.com/#/raineuplift" target="_blank"><button className="text-center p_btn btn shadow">Book Now</button></a>
           </div>
         </div>
       </div>
@@ -110,6 +110,7 @@ function App() {
             </div>
           </div>
         </div>
+        
         <div className=" mt-5 mb-5">
           <div className="text-center">
             <h1 className="display-1 gradient-text">Corporate Wellness</h1>
